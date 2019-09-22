@@ -15,7 +15,7 @@ public class FileWatchingExample {
 	private static final String FOLDER = "D:/localDownload/";
 
 	// The monitor will perform polling on the folder every 30 seconds
-	private static final long pollingInterval = 30 * 1000;
+	private static final long pollingInterval = 3 * 1000;
 
 	public static void main(String[] args) throws Exception {
 		// Change this to match the environment you want to watch.

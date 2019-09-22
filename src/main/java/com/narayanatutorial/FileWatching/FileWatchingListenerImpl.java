@@ -37,6 +37,11 @@ public class FileWatchingListenerImpl implements FileAlterationListener {
 		System.out.println("3. readable: " + file.canRead());
 		System.out.println("4. writable: " + file.canWrite());
 		System.out.println("5. executable: " + file.canExecute());
+		File newLoc=new File("D:/localDownload_slip/"+file.getName());
+		boolean flag=file.renameTo(newLoc);
+		if(flag) {
+			System.out.println("file moved to another location");
+		}
 	}
 
 	//execute the method every time when schedule triggered and when file modified
@@ -47,6 +52,11 @@ public class FileWatchingListenerImpl implements FileAlterationListener {
 		System.out.println("3. readable: " + file.canRead());
 		System.out.println("4. writable: " + file.canWrite());
 		System.out.println("5. executable: " + file.canExecute());
+		File newLoc=new File("D:/localDownload_slip/"+file.getName());
+		boolean flag=file.renameTo(newLoc);
+		if(flag) {
+			System.out.println("file moved to another location");
+		}
 	}
 
 	//execute the method every time when schedule triggered and when file deleted
